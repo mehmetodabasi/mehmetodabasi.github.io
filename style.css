@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgba(220, 220, 220, 0.217);
+  width: 100%;
+  height: 100vh;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+header a:hover {
+  text-decoration: none;
+  color: #09c7e9;
+}
+
+.firstbody header a:hover {
+  text-decoration: none;
+  color: #00fff2;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #35424a00;
+  color: white;
+  min-height: 7.5vh;
+  padding: 0.45rem 1rem;
+}
+header h1 {
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.837);
+  margin-left: 1rem;
+}
+header nav {
+  margin-right: 1rem;
+}
+.otherheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  background-color: #2b2b2b;
+  color: white;
+  min-height: 7.5vh;
+  padding: 0.45rem 1rem;
+}
+
+/*? Home Page CSS */
+.banner {
+  background-image: url(./images/cargo2.jpg);
+  height: 80vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 1.9;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-rows: 1.1fr 1fr 1fr;
+  place-items: center;
+}
+.firstbody::before {
+  content: "";
+  width: 100%;
+  height: 80%;
+  background-color: #2b2b2b51;
+  position: absolute;
+  top: 0;
+}
+.banner .midbanner {
+  display: grid;
+  justify-items: center;
+  /* border: 2px solid rgb(0, 208, 255); */
+  background-color: #2b2b2b1c;
+  border-radius: 10%;
+  padding: 1rem;
+  outline: 1rem solid #2b2b2b1c;
+  outline-offset: 1rem;
+}
+.midbanner img {
+  align-self: start;
+  border: 4px solid rgb(88, 88, 88);
+  border-radius: 50%;
+  position: relative;
+}
+.midbanner h1 {
+  align-self: center;
+  margin: 1rem 0 1.5rem 0;
+  position: relative;
+}
+.midbanner p {
+  align-self: start;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 0rem;
+  position: relative;
+  font-weight: bold;
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+  background-color: white;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border: 3px solid #001e38;
+  border-width: 7.5px 0;
+}
+.img1 {
+  display: grid;
+  justify-items: center;
+  padding-top: 1rem;
+}
+.writing {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+#aws {
+  outline: 3px solid #fa981a;
+  border-radius: 50%;
+}
+#devops {
+  position: relative;
+  top: 8px;
+}
+.part {
+  display: grid;
+  grid-template-rows: 3fr 2fr;
+  /* place-items: center; */
+  justify-content: space-between;
+  border-right: 5px solid #001e38;
+}
+.part:nth-child(3) {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr; */
+  /* place-items: center; */
+  border-right: 0px solid orange;
+}
+
+/*? Certifications CSS */
+#certbody {
+  background: rgb(0, 0, 0);
+  display: grid;
+  place-items: center;
+}
+
+#certbody img {
+  border-radius: 1.5%;
+}
+
+.maincert,
+.othercert {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffffb5;
+}
+
+.maincert {
+  width: 90%;
+  display: grid;
+  margin-top: 5rem;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+.maincert div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 9.5rem 0 9.5rem;
+  background-color: rgba(84, 108, 132, 0.296);
+  border-radius: 35px;
+}
+
+.maincert div:nth-child(1) {
+  position: relative;
+  top: 100px;
+}
+
+.maincert div:nth-child(2) img:nth-child(1) {
+  position: relative;
+  top: 5rem;
+}
+.maincert div:nth-child(2) img:nth-child(3) {
+  position: relative;
+  top: 5rem;
+}
+
+#cert1:hover {
+}
+
+.othercert {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  margin-top: 0rem;
+  padding-top: 2.5rem;
+}
+
+.othercert div:nth-child(2) {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 55px;
+  padding: 12.5rem 0% 5rem;
+  background-color: rgba(84, 108, 132, 0.296);
+  border-radius: 35px;
+  margin-bottom: 3rem;
+}
+
+.othercert div:nth-child(1) {
+  position: relative;
+  top: 100px;
+}
+
+/*? Articles CSS */
+/*? Footer CSS */
+footer {
+  background-color: #001a30;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 7vh;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+footer nav {
+  position: absolute;
+}
